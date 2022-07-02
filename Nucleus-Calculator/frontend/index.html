@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nucleus Scientific Calculator">
+    <meta name="Author" content="Parsa SabetZadeh">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./favicon.ico">
+    <link href='https://css.gg/close.css' rel='stylesheet'>
+    <title>Nucleus Calculator V1.1</title>
+</head>
+<body>
+
+    <div class="calculator">
+
+        <div class="calc-container">
+            <i class="fa fa-history" style="font-size:24px" id="history-button"></i>
+            <i class="fa fa-gear fa-spin" style="font-size:24px" id="settings-button"></i>
+
+            <h1 class="name" title="V1.1 - 2022">Nucleus</h1>
+            <div class="output">
+
+                <div class="operation">
+                    <div class="value">
+
+                    </div>
+                </div>
+
+                <div class="result">
+                    <div class="value">0</div>
+                </div>
+
+            </div>
+
+            <span class="error-msg">Please enter a complete expression...</span>
+
+            <div class="input"></div>
+        </div>
+
+        <span class="final-word">Copyright 2022© Nucleus Calculator. All rights belong to Parsa SabetZadeh: The creator, designer & developer of <a id="calc-name-span" href="https://github.com/parsasabetz/nuclues-calculator" target="_blank">&nbspNucleus Calculator</a>.</span>
+
+    </div>
+
+    <div class="settings-inactive">
+        <h2 class="settings-name">Settings</h2>
+        <i class="gg-close close1" id="ggclose1"></i>
+        <div class="logs-list">
+            <ul id="settings_allLogs_list">
+
+            </ul>
+        </div>
+        <img src="./favicon.ico" alt="Nucleus Scientific Calculator App Icon" class="settings-app-icon" title="©2022 - V1.1 , Release of June 2022 - Parsa SabetZadeh"/>
+    </div>
+
+    <div class="history-inactive">
+        <h2 class="history-name">History</h2>
+        <i class="gg-close close2" id="ggclose2"></i>
+        <div class="history-list">
+            <!-- 
+                ul>li*30  history list up to 30
+             -->
+             <ul id="history_last10_list">
+             </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="./calculator.js" type="module"></script>
+</body>
+</html>
